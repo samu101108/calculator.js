@@ -2,42 +2,29 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles.css">
     <title>Calculadora</title>
-
   </head>
   <body>
-
-    <div class="box">
-      <div class="">
-        <input id="disp" class="text-right form-control disp" onclick="DisplayNumber()" placeholder="0">
+    <div  class="box">
+      <div>
+        <input id="display" class="disp txt-right" placeholder="0">
       </div>
-      <div class="blk">
-        <div class="line ac">AC</div><div class="line op">%</div><div class="line op">&#247;</div><div class="line ers">&#9003;</div>
+      <div>
+        <span id="clear" class="btn btn-ac">AC</span><span id="percent" class="btn btn-light-gray">%</span><span id="divide" class="btn btn-light-gray">&#247;</span><span id="del" class="btn btn-del">&#9003;</span>
       </div>
-      <div class="blk">
-        <div id="7" class="line">7</div><div id="8" class="line">8</div><div id="9" class="line">9</div><div id="x" class="line op">x</div>
+      <div>
+        <span id="seven" class="btn">7</span><span id="eight" class="btn">8</span><span id="nine" class="btn">9</span><span id="times" class="btn btn-light-gray">x</span>
       </div>
-      <div class="blk">
-        <div id="4" class="line">4</div><div id="5" class="line">5</div><div id="6" class="line">6</div><div id="-" class="line op">-</div>
+      <div>
+        <span id="four" class="btn">4</span><span id="five" class="btn">5</span><span id="six" class="btn">6</span><span id="minus" class="btn btn-light-gray">-</span>
       </div>
-      <div class="blk">
-        <div id="1" onclick="DisplayNumber("1")" class="line">1</div><div id="2" class="line">2</div><div id="3" class="line">3</div><div id="+" class="line op">+</div>
+      <div>
+        <span id="one" class="btn">1</span><span id="two" class="btn">2</span><span id="three" class="btn">3</span><span id="plus" class="btn btn-light-gray">+</span>
       </div>
-      <div class="blk">
-        <div id="0" onclick="DisplayNumber("0")" class="line">0</div><div id="," class="line">,</div><div id="()" class="line op">(&nbsp;&nbsp;)</div><div id="=" class="line eq">=</div>
+      <div>
+        <span id="zero" class="btn">0</span><span id="comma" class="btn">,</span><span id="parenthesis" class="btn btn-light-gray">(&nbsp;)</span><span id="equal" class="btn btn-dark-gray">=</span>
       </div>
     </div>
-<script>
-  function DiplayNumber(str) {
-    document.getElementById("disp").innerHTML = "9";}
-</script>
-<br><br>
-<p id="demo" onclick="myFunction()">Click me to change my text color.</p>
-<script>
-function myFunction() {
-  document.getElementById("demo").innerHTML = "red";}
-</script>
   </body>
 </html>
